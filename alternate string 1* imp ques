@@ -1,0 +1,58 @@
+https://www.codechef.com/problems/ALTSTR  link to the problem
+
+/*
+     ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् |
+     उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ||
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+#define int    long long int
+void solve()
+{
+	int n;
+	cin>>n;
+	string s;
+	cin>>s;
+	int c=0;
+	int d=0;
+	for(int i=0;i<n;i++)
+	{
+       if(s[i]=='1')
+       {
+       	  c++;
+       }
+       else
+       {
+       	  d++;
+       }
+
+	}
+
+	if(d==c)
+	{
+		cout<<2*d<<endl;
+	}
+	else
+		if(d>c)
+		{
+			cout<<2*c+1<<endl;
+		}
+		else
+		{
+			cout<<2*d+1<<endl;
+		}
+	
+}
+int32_t main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+
+	return 0;
+}
